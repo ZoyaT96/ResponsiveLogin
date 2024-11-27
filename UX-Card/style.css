@@ -1,0 +1,93 @@
+*{
+    margin :0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Card Container*/
+.card-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+.Profile-pic {  
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 130px; 
+    height: 130px;
+    margin-left: 50px;
+  }
+  /* MProfile Picture*/
+.Profile-pic img {
+    border-radius: 50%;
+    border: none;
+  }
+  /* Verified badge */
+.verified-badge{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  /* Description*/
+.Description{
+    display: flex;
+    justify-content: center; 
+    margin-left: 50px;
+  } 
+.Description h1{
+    font-size: 40px;
+}
+.Description p{
+    font-size: 30px;
+    color: gray;
+}
+/* Media Queries for tablets*/
+@media (max-width: 768px) {
+    .card-container {
+        max-width: 500px;
+      width: 100%;
+    }
+  
+    .Profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .Description h2 {
+      font-size: 30px;
+    }
+  
+    .Description p {
+      font-size: 20px;
+    }
+  }
+  /* Media Queries for Mobiles*/
+  @media (max-width: 480px) {
+    .card-container {
+        max-width: 400px;
+        width: 100%
+    }
+  
+    .Description h2 {
+      font-size: 18px;
+    }
+  
+    .Description p {
+      font-size: 16px;
+    }
+  }
